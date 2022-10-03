@@ -1,0 +1,45 @@
+$roboto-font:'Roboto', sans-serif;
+$jamjuree-font: 'Bai Jamjuree', sans-serif;
+
+$font-size-small: 14px;
+$font-size-big: 80px;
+$font-size-middle: 18px;
+$font-size-smaller: 12px;
+
+$line-height-big: 80px;
+$line-height-small: 20px;
+$line-height-middle: 30px;
+
+$letter-spacing-normal: 0.01em;
+$letter-spacing-minor: -0.01em;
+
+$base-weight: 500;
+$big-weight: 700;
+$middle-weight: 400;
+
+$small-width: 16px;
+$small-height: 16px;
+
+$card-rotate:rotate(26.39deg);
+
+$yellow: #FFD968;
+$white: #F9FDFF;
+$blue: #80D1FF;
+$black: #222223;
+$light-grey: #E5E5E5;
+$dark-grey: #818486;
+
+%flex-list{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+%base-text-list{
+  font-family: $roboto-font;
+  font-size: $font-size-small;
+  line-height: $line-height-small;
+  letter-spacing: $letter-spacing-normal;
+  font-weight: $base-weight;
+  text-align: center;
+}
