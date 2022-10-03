@@ -68,7 +68,7 @@
 .header-content__title {
   color: $black;
   font-family: $jamjuree-font;
-  font-size: $font-size-big;
+  font-size: $font-size-large;
   line-height: $line-height-big;
   font-weight: $big-weight;
 }
@@ -148,4 +148,115 @@
 .number__gold {
   @extend %flex-list;
   justify-content: center;
+}
+.header-group {
+  @extend %flex-list;
+  justify-content: space-around;
+  width: 100%;
+  height: 165px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+.group-item {
+  @extend %flex-column;
+  width: 188px;
+  height: 165px;
+  margin-top: 116px;
+}
+.group-item__image{
+  width: 32px;
+  height: 35px;
+}
+.group-item__title{
+  font-family: $roboto-font;
+  font-size: $font-size-middle;
+  line-height: $line-height-middle;
+  font-weight: $big-weight;
+  color: $black;
+}
+.group-item__text {
+  font-family: $roboto-font;
+  font-size: $font-size-small;
+  line-height: $line-height-small;
+  font-weight: $middle-weight;
+}
+
+.next-header {
+  @extend %flex-list;
+  justify-content: space-around;
+  width: 100%;
+  height: 417px;
+  background-color: $light-blue;
+  margin: 131px 50px 0 50px;
+}
+.text-item {
+  @extend %flex-column;
+  align-items: flex-start;
+  gap: 10px;
+  width: 260px;
+}
+.text-item__title {
+  font-family: $jamjuree-font;
+  font-size: $font-size-big;
+  line-height: $line-height-middle;
+  font-weight: $base-weight;
+  color: $black;
+}
+.text-item__text {
+  font-family: $roboto-font;
+  font-size: $font-size-small;
+  line-height: $line-height-small;
+  font-weight: $middle-weight;
+  color: $black;
+}
+.customer {
+  @extend %flex-column;
+  height: 642px;
+  width: 100%;
+  margin-top: 131px;
+}
+.customer-text {
+  @extend %flex-column;
+  width: 643px;
+  height: 200px;
+  margin: auto;
+}
+.customer-text__title {
+  color: $black;
+  font-family: $jamjuree-font;
+  font-size: $font-size-large;
+  line-height: $line-height-big;
+  font-weight: $big-weight;
+}
+.customer-text__description {
+  font-family: $roboto-font;
+  font-size: $font-size-small;
+  font-weight: $middle-weight;
+  line-height: $line-height-middle;
+  color: $dark-grey;
+}
+.customer-list {
+  @extend %flex-list;
+  height: 209px;
+  width: 1090px;
+  margin: auto;
+}
+.item {
+  @extend %flex-column;
+  align-items: center;
+  width: 130px;
+  height: 80px;
+  border: 1px solid $light-grey;
+}
+.item_title {
+  font-family: $roboto-font;
+  font-size: $font-size-middle;
+  line-height: $line-height-middle;
+  color: $dark-grey;
+}
+.item_number {
+  font-family: $roboto-font;
+  font-size: $font-size-big;
+  line-height: $line-height-base;
+  color: $black;
 }
