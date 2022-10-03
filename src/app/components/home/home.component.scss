@@ -1,0 +1,151 @@
+@import '../../../variables.scss';
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@700&family=Roboto&display=swap');
+
+.navigation{
+  @extend %flex-list;
+  position: relative;
+  margin: 40px 50px 0 50px;
+  width: 100%;
+}
+.navigate-text{
+  @extend %flex-list;
+  max-width: 300px;
+  width: 100%;
+}
+.navigate-text__item, .navigation__navigate-title {
+  @extend %base-text-list
+}
+.navigation__shopping-bag {
+  width: $small-width;
+  height: $small-height;
+}
+.header-card {
+  @extend %flex-list;
+  justify-content: center;
+  width: 100%;
+  margin: 125px 50px 0 50px;
+}
+.icons {
+  width: 228px;
+  height: 327px;
+  background-color: $yellow;
+}
+.icons-list {
+  @extend %flex-list;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin: 45px 60px;
+  width: 140px;
+  height: 200px;
+}
+.icon {
+  @extend %flex-list;
+  width: 55px;
+  height: 55px;
+  border-radius: 20px;
+  background-color: $white;
+}
+.icon__image {
+  width: 17px;
+  height: 22px;
+  padding-left: 20px;
+}
+
+.card-container {
+  width: 449px;
+  height: 327px;
+  background-color: $blue;
+}
+.header-content {
+  @extend %flex-list;
+  flex-direction: column;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  width: 682px;
+  height: 327px;
+}
+.header-content__title {
+  color: $black;
+  font-family: $jamjuree-font;
+  font-size: $font-size-big;
+  line-height: $line-height-big;
+  font-weight: $big-weight;
+}
+.header-content__middle-text{
+  color: $black;
+  font-family: $roboto-font;
+  font-size: $font-size-middle;
+  line-height: $line-height-middle;
+  font-weight: $middle-weight;
+}
+.bottom-group{
+  @extend %flex-list;
+  width: 185px;
+  height: 50px;
+}
+.arrow-container{
+  @extend %flex-list;
+  width: 50px;
+  height: 50px;
+  background-color: $black;
+}
+.bottom-group__text{
+  font-family: $roboto-font;
+  font-size: $font-size-middle;
+  font-weight: $middle-weight;
+}
+.arrow-container__arrow {
+  padding-left: 15px;
+}
+
+.visa {
+  width: 370px;
+  height: 230px;
+  transform: rotate(-27.61deg);
+}
+.head {
+  height: 70px;
+  background-color: $black;
+}
+.bottom {
+  @extend %flex-list;
+  flex-direction: column;
+  height: 160px;
+  background-color: $white;
+  width: 370px;
+}
+.bottom__text {
+  @extend %flex-list;
+  width: 350px;
+  font-family: $roboto-font;
+  font-size: $font-size-smaller;
+  font-weight: $base-weight;
+  line-height: $line-height-small;
+  color: $dark-grey;
+}
+.head {
+  @extend %flex-list;
+  justify-content: space-between;
+  width: 370px;
+}
+.head__gold-sign, 
+.text__visa-sign,
+.number__item,
+.bottom_visa {
+  transform: $card-rotate;
+}
+.number {
+  @extend %flex-list;
+  justify-content: space-around;
+  width: 160px;
+  margin-right: 20px;
+}
+.bottom_visa {
+  padding-top: 30px;
+}
+.number__silver,
+.number__gold {
+  @extend %flex-list;
+  justify-content: center;
+}
