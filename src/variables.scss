@@ -2,13 +2,17 @@ $roboto-font:'Roboto', sans-serif;
 $jamjuree-font: 'Bai Jamjuree', sans-serif;
 
 $font-size-small: 14px;
-$font-size-big: 80px;
+$font-size-large: 80px;
 $font-size-middle: 18px;
 $font-size-smaller: 12px;
+$font-size-big: 30px;
 
 $line-height-big: 80px;
 $line-height-small: 20px;
 $line-height-middle: 30px;
+$line-height-base: 40px;
+
+$border-small: 16px;
 
 $letter-spacing-normal: 0.01em;
 $letter-spacing-minor: -0.01em;
@@ -17,8 +21,8 @@ $base-weight: 500;
 $big-weight: 700;
 $middle-weight: 400;
 
-$small-width: 16px;
-$small-height: 16px;
+$small-width: 25px;
+$small-height: 25px;
 
 $card-rotate:rotate(26.39deg);
 
@@ -28,6 +32,8 @@ $blue: #80D1FF;
 $black: #222223;
 $light-grey: #E5E5E5;
 $dark-grey: #818486;
+$light-blue: #99d3f5;
+$light: #FFFFFF;
 
 %flex-list{
   display: flex;
@@ -35,10 +41,23 @@ $dark-grey: #818486;
   align-items: center;
 }
 
+%flex-column{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
 %base-text-list{
   font-family: $roboto-font;
   font-size: $font-size-small;
   line-height: $line-height-small;
+  letter-spacing: $letter-spacing-normal;
+  font-weight: $base-weight;
+  text-align: center;
+}
+%base-text-title{
+  font-family: $jamjuree-font;
+  font-size: $font-size-middle;
+  line-height: $line-height-middle;
   letter-spacing: $letter-spacing-normal;
   font-weight: $base-weight;
   text-align: center;
