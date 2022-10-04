@@ -8,32 +8,39 @@
   margin: 40px 50px 0 50px;
   width: 100%;
 }
+
 .navigate-text{
   @extend %flex-list;
   max-width: 300px;
   width: 100%;
 }
+
 .navigate-text__item {
   @extend %base-text-list
 }
+
 .navigation__navigate-title {
   @extend %base-text-title
 }
+
 .navigation__shopping-bag {
   width: $small-width;
   height: $small-height;
 }
+
 .header-card {
   @extend %flex-list;
   justify-content: center;
   width: 100%;
   margin: 125px 50px 0 50px;
 }
+
 .icons {
   width: 228px;
   height: 327px;
   background-color: $yellow;
 }
+
 .icons-list {
   @extend %flex-list;
   flex-direction: column;
@@ -42,6 +49,7 @@
   width: 140px;
   height: 200px;
 }
+
 .icon {
   @extend %flex-list;
   width: 55px;
@@ -49,6 +57,7 @@
   border-radius: 20px;
   background-color: $white;
 }
+
 .icon__image {
   width: 17px;
   height: 22px;
@@ -60,6 +69,7 @@
   height: 327px;
   background-color: $blue;
 }
+
 .header-content {
   @extend %flex-list;
   flex-direction: column;
@@ -68,36 +78,37 @@
   width: 682px;
   height: 327px;
 }
+
 .header-content__title {
-  color: $black;
+  @extend %large-text-list;
   font-family: $jamjuree-font;
-  font-size: $font-size-large;
-  line-height: $line-height-big;
-  font-weight: $big-weight;
+  color: $black;
 }
+
 .header-content__middle-text{
+  @extend %middle-text-list;
   color: $black;
   font-family: $roboto-font;
-  font-size: $font-size-middle;
-  line-height: $line-height-middle;
-  font-weight: $middle-weight;
 }
+
 .bottom-group{
   @extend %flex-list;
   width: 185px;
   height: 50px;
 }
+
 .arrow-container{
   @extend %flex-list;
   width: 50px;
   height: 50px;
   background-color: $black;
 }
+
 .bottom-group__text{
+  @extend %middle-text-list;
   font-family: $roboto-font;
-  font-size: $font-size-middle;
-  font-weight: $middle-weight;
 }
+
 .arrow-container__arrow {
   padding-left: 15px;
 }
@@ -107,10 +118,12 @@
   height: 230px;
   transform: rotate(-27.61deg);
 }
+
 .head {
   height: 70px;
   background-color: $black;
 }
+
 .bottom {
   @extend %flex-list;
   flex-direction: column;
@@ -118,40 +131,45 @@
   background-color: $white;
   width: 370px;
 }
+
 .bottom__text {
   @extend %flex-list;
+  @extend %smaller-text-list;
   width: 350px;
   font-family: $roboto-font;
-  font-size: $font-size-smaller;
-  font-weight: $base-weight;
-  line-height: $line-height-small;
   color: $dark-grey;
 }
+
 .head {
   @extend %flex-list;
   justify-content: space-between;
   width: 370px;
 }
+
 .head__gold-sign, 
 .text__visa-sign,
 .number__item,
 .bottom_visa {
   transform: $card-rotate;
 }
+
 .number {
   @extend %flex-list;
   justify-content: space-around;
   width: 160px;
   margin-right: 20px;
 }
+
 .bottom_visa {
   padding-top: 30px;
 }
+
 .number__silver,
 .number__gold {
   @extend %flex-list;
   justify-content: center;
 }
+
 .header-group {
   @extend %flex-list;
   justify-content: space-around;
@@ -160,28 +178,29 @@
   margin-left: 50px;
   margin-right: 50px;
 }
+
 .group-item {
   @extend %flex-column;
   width: 188px;
   height: 165px;
   margin-top: 116px;
 }
+
 .group-item__image{
   width: 32px;
   height: 35px;
 }
+
 .group-item__title{
+  @extend %middle-text-list;
   font-family: $roboto-font;
-  font-size: $font-size-middle;
-  line-height: $line-height-middle;
   font-weight: $big-weight;
   color: $black;
 }
+
 .group-item__text {
+  @extend %small-text-list;
   font-family: $roboto-font;
-  font-size: $font-size-small;
-  line-height: $line-height-small;
-  font-weight: $middle-weight;
 }
 
 .next-header {
@@ -192,58 +211,53 @@
   background-color: $light-blue;
   margin: 131px 50px 0 50px;
 }
+
 .text-item {
   @extend %flex-column;
   align-items: flex-start;
   gap: 10px;
   width: 260px;
 }
+
 .text-item__title {
+  @extend %big-text-list;
   font-family: $jamjuree-font;
-  font-size: $font-size-big;
-  line-height: $line-height-middle;
-  font-weight: $base-weight;
   color: $black;
 }
+
 .text-item__text {
+  @extend %small-text-list;
   font-family: $roboto-font;
-  font-size: $font-size-small;
-  line-height: $line-height-small;
-  font-weight: $middle-weight;
   color: $black;
 }
+
 .customer {
   @extend %flex-column;
   height: 642px;
   width: 100%;
   margin-top: 100px;
 }
+
 .customer-text {
   @extend %flex-column;
   width: 643px;
   height: 200px;
   margin: auto;
 }
+
 .customer-text__title {
+  @extend %large-text-list;
   color: $black;
   font-family: $jamjuree-font;
-  font-size: $font-size-large;
-  line-height: $line-height-big;
-  font-weight: $big-weight;
 }
-.customer-text__description {
-  font-family: $roboto-font;
-  font-size: $font-size-middle;
-  font-weight: $middle-weight;
-  line-height: $line-height-middle;
-  color: $dark-grey;
-}
+
 .customer-list {
   @extend %flex-list;
   height: 209px;
   width: 1090px;
   margin: auto;
 }
+
 .item {
   @extend %flex-column;
   align-items: center;
@@ -252,16 +266,17 @@
   border: 2px solid $light-blue;
   border-radius: $border-small;
 }
-.item_title, .top__text {
+
+.item_title, .top__text, 
+.customer-text__description {
+  @extend %middle-text-list;
   font-family: $roboto-font;
-  font-size: $font-size-middle;
-  line-height: $line-height-middle;
   color: $dark-grey;
 }
+
 .item_number{
+  @extend %big-text-list;
   font-family: $roboto-font;
-  font-size: $font-size-big;
-  line-height: $line-height-base;
   color: $black;
 }
 
@@ -274,6 +289,7 @@
   margin: auto;
   background-color: $light-blue;
 }
+
 .inform,
 .top,
 .down,
@@ -285,31 +301,34 @@
   margin: auto;
   border-radius: $border-small;
 }
+
 .top {
   justify-content: space-around;
   height: 190px;
 }
+
 .top__title {
+  @extend %big-text-list;
   font-family: $jamjuree-font;
-  font-size: $font-size-big;
-  line-height: $line-height-big;
   color: $black;
 }
+
 .down {
   height: 190px;
 }
+
 .element__title {
+  @extend %middle-text-list;
   font-family: $jamjuree-font;
-  font-size: $font-size-middle;
-  line-height: $line-height-middle;
   color: $black;
 }
+
 .element__text, .upper__text {
+  @extend %small-text-list;
   font-family: $roboto-font;
-  font-size: $font-size-small;
-  line-height: $line-height-small;
   color: $dark-grey;
 }
+
 .draw {
   @extend %flex-column;
   justify-content: space-around;
@@ -320,6 +339,7 @@
   border-radius: $border-small;
   margin: auto;
 }
+
 .upper {
   @extend %flex-list;
   height: 179px;
@@ -328,16 +348,18 @@
   box-shadow: 0px 18px 30px rgba(111, 111, 111, 0.07);
   border-radius: $border-small;
 }
+
 .upper__title {
+  @extend %big-text-list;
   font-family: $jamjuree-font;
-  font-size: $font-size-big;
-  line-height: $line-height-big;
   color: $black;
 }
+
 .lower {
   @extend %flex-list;
   justify-content: space-around;
 }
+
 .part {
   width: 178px;
   height: 139px;
@@ -345,13 +367,129 @@
   color: $light;
   box-shadow: 19px 19px 47px rgba(161, 176, 207, 0.2062);
 }
+
 .part__image {
   width: 40px;
   height: 40px;
 }
+
 .part__text {
+  @extend %middle-text-list;
   font-family: $roboto-font;
-  font-size: $font-size-middle;
-  line-height: $line-height-middle;
   color: $black;
+}
+
+.newsletter {
+  @extend %flex-list;
+  justify-content: space-around;
+  width: 100%;
+  height: 522px;
+  background-color: $blue;
+  margin: 131px 50px 0 50px;
+}
+
+.news {
+  @extend %flex-column;
+  gap: 30px;
+  width: 430px;
+}
+
+.news__title {
+  @extend %big-text-list;
+  font-family: $roboto-font;
+  color: $black;
+}
+
+.news__text {
+  @extend %middle-text-list;
+  font-family: $jamjuree-font;
+  color: $dark-grey;
+}
+
+.main {
+  @extend %flex-column;
+  gap: 30px;
+  width: 430px;
+}
+
+.main__title {
+  @extend %bigger-text-list;
+  font-family: $jamjuree-font;
+  color: $black;
+}
+
+.button {
+  width: 160px;
+  height: 58px;
+  background-color: $orange;
+  outline-style: none;
+}
+
+.button__text {
+  @extend %middle-text-list;
+  font-family: $roboto-font;
+  color: $white;
+}
+
+.newscard{
+  @extend %flex-list;
+  width: 230px;
+  height: 370px;
+}
+
+.left-side {
+  @extend %flex-column;
+  background-color: $black;
+  width: 70px;
+  height: 370px;
+}
+
+.right-side {
+  @extend %flex-column;
+  background-color: $white;
+  position: relative;
+  width: 160px;
+  height: 370px;
+}
+
+.right-side_visa {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-25px,-50px);
+  width: 34px;
+  height: 104px;
+}
+
+.right-side__visa-sign {
+  width: 17px;
+  height: 42px;
+  transform: rotate(114deg);
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+}
+
+.left-side {
+  @extend %flex-list;
+  justify-content: space-evenly;
+  gap: 64px;
+}
+.left-side__gold-sign {
+  transform: rotate(116deg);
+}
+
+.numbers {
+  @extend %flex-list;
+  justify-content: space-around;
+  height: 120px;
+}
+
+.numbers__silver, .numbers__gold {
+  @extend %flex-list;
+  transform: rotate(-90deg);
+}
+
+.numbers__item {
+  transform: rotate(28deg);
 }
