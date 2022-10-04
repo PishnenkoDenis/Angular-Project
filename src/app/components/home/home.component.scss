@@ -15,11 +15,13 @@
   width: 100%;
 }
 
-.navigate-text__item {
+.navigate-text__item,
+.menu__item {
   @extend %base-text-list
 }
 
-.navigation__navigate-title {
+.navigation__navigate-title,
+.footer-head__head-title {
   @extend %base-text-title
 }
 
@@ -373,7 +375,8 @@
   height: 40px;
 }
 
-.part__text {
+.part__text,
+.auth__item {
   @extend %middle-text-list;
   font-family: $roboto-font;
   color: $black;
@@ -492,4 +495,53 @@
 
 .numbers__item {
   transform: rotate(28deg);
+}
+
+.footer {
+  @extend %flex-column;
+  height: 175px;
+  max-width: 1440px;
+  width: 100%;
+  margin: auto;
+  margin-top: 131px;
+  margin-bottom: 32px;
+}
+
+.footer-head,
+.menu,
+.information,
+.auth,
+.refs,
+.low-bottom {
+  @extend %flex-list;
+}
+
+.information {
+  width: 300px;
+}
+
+.auth {
+  width: 130px;
+}
+
+.refs {
+  width: 100px;
+}
+
+.menu {
+  width: 350px;
+}
+
+.bottom {
+  width: 100%;
+}
+
+.refs__image {
+  width: 20px;
+  height: 20px;
+}
+
+.low-bottom__item {
+  @extend %smaller-text-list;
+  color: $dark-grey;
 }
